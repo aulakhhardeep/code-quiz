@@ -48,8 +48,7 @@ if (holdInterval === 0)
         if(secondsLeft <= 0)
         {
             clearInterval(holdInterval);
-            allDone();
-            currentTimeEI.textContent = "Time's up!";
+        
         }
         }, 1000);
 }
