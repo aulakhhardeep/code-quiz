@@ -6,5 +6,10 @@ It is a javaScript quiz project. There is specific time limit to complete this p
 * CSS
 * JavaScript
 
+# Screenshots
+![](assets/images/landingpage.JPG)
+![](assets/images/questionwithtimer.JPG)
+![](assets/images/QuizEnd.JPG)
+
 # Link for Quiz
 https://aulakhhardeep.github.io/code-quiz/index.html
