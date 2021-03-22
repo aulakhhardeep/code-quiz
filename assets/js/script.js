@@ -26,7 +26,34 @@ var questions = [
         question: "5. Using _______ statement is how you test for a specific condition.",
         option: ["1. Select", "2. If", "3. Switch", "4. For"],
         answer: "2. If"
-    }
+    },
+];
+//Set variables
+var currentTimeEI = document.querySelector("#currentTime");
+var timerEI = document.querySelector("#startTime");
 
 
-]
+var secondsLeft = 76;
+var holdInterval = 0;
+
+
+//set Timer
+timerEI.addEventListener("click", function()
+{
+if (holdInterval === 0)
+{
+    holdInterval = setInterval(function(){
+        secondsLeft--;
+        currentTimeEI.textContent = "Time: " + secondsLeft;
+        if(secondsLeft <= 0)
+        {
+            clearInterval(holdInterval);
+            allDone();
+            currentTimeEI.textContent = "Time's up!";
+        }
+        }, 1000);
+}
+
+});
+
+
